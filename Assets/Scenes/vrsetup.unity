@@ -362,6 +362,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 201382504}
+  - 114: {fileID: 201382505}
   m_Layer: 0
   m_Name: bat (2)
   m_TagString: Untagged
@@ -387,6 +388,18 @@ Transform:
   - {fileID: 1048348863}
   m_Father: {fileID: 1243672705}
   m_RootOrder: 2
+--- !u!114 &201382505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 201382503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58b3746d825f497eafecb5ea29bd122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
 --- !u!1 &256849450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1276,22 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738, type: 2}
   m_PrefabInternal: {fileID: 621629416}
+--- !u!1 &1386659294 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 6460d38e7bf344648afcdb614e48e63d, type: 3}
+  m_PrefabInternal: {fileID: 119503218}
+--- !u!114 &1386659296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386659294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58b3746d825f497eafecb5ea29bd122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
 --- !u!1001 &1401608368
 Prefab:
   m_ObjectHideFlags: 0
@@ -1647,6 +1676,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1984008995}
+  - 114: {fileID: 1984008996}
   m_Layer: 0
   m_Name: bat (1)
   m_TagString: Untagged
@@ -1672,6 +1702,18 @@ Transform:
   - {fileID: 152613687}
   m_Father: {fileID: 1243672705}
   m_RootOrder: 1
+--- !u!114 &1984008996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984008994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58b3746d825f497eafecb5ea29bd122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
 --- !u!1 &1999330948
 GameObject:
   m_ObjectHideFlags: 0
