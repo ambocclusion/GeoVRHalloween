@@ -114,7 +114,7 @@ Material:
       second: 0.8
     - first:
         name: _MetalicValue
-      second: 1.7
+      second: 1.47
     - first:
         name: _MetallShading
       second: 0.92
@@ -141,7 +141,7 @@ Material:
       second: 0.02
     - first:
         name: _RoughnessValue
-      second: 0.5
+      second: 0.93
     - first:
         name: _SrcBlend
       second: 1
