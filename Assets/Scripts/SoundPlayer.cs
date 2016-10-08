@@ -1,15 +1,46 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SoundPlayer : MonoBehaviour {
+[RequireComponent(typeof(AudioSource))]
+public class SoundPlayer : MonoBehaviour, IGvrGazeResponder {
 
-	// Use this for initialization
-	void Start () {
-	
+	public bool OnClick = false;
+
+	public AudioClip[] Sounds;
+
+	public void OnGazeEnter() {
+
+		if(!OnClick){
+
+			PlaySound();
+
+		}
+		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	/// Called when the user stops looking on the GameObject, after OnGazeEnter
+	/// was already called.
+	public void OnGazeExit() {
+		
 	}
+
+	/// Called when the viewer's trigger is used, between OnGazeEnter and OnGazeExit.
+	public void OnGazeTrigger() {
+
+		if(OnClick){
+
+			PlaySound();
+
+		}
+
+	}
+
+	public void PlaySound(){
+
+		int random = Random.Range(0, Sounds.Length);
+
+		GetComponent<AudioSource>().PlayOneShot(Sounds[random]);
+
+	}
+
 }
