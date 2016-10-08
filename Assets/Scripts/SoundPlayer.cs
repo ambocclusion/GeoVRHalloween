@@ -8,6 +8,9 @@ public class SoundPlayer : MonoBehaviour, IGvrGazeResponder {
 
 	public AudioClip[] Sounds;
 
+	private float _lastTime = 0.0f;
+	private float _lastPlayLength = 0.0f;
+
 	public void OnGazeEnter() {
 
 		if(!OnClick){
@@ -37,9 +40,15 @@ public class SoundPlayer : MonoBehaviour, IGvrGazeResponder {
 
 	public void PlaySound(){
 
+		if(Time.time < _lastTime + _lastPlayLength)
+			return;
+
 		int random = Random.Range(0, Sounds.Length);
 
 		GetComponent<AudioSource>().PlayOneShot(Sounds[random]);
+
+		_lastTime = Time.time;
+		_lastPlayLength = Sounds[random].length;
 
 	}
 
