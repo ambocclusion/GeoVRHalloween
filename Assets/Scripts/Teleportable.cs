@@ -19,14 +19,12 @@ public class Teleportable : MonoBehaviour, IGvrGazeResponder {
 
 	/// Called when the viewer's trigger is used, between OnGazeEnter and OnGazeExit.
 	public void OnGazeTrigger() {
-		Debug.Log("no");
 		RaycastHit hit;
 		Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit);
 		Teleport(hit.point);
 	}
 
 	public void Teleport(Vector3 location){
-		Debug.Log("yes");
 		Camera.main.transform.position = location + new Vector3(0, FloorOffset, 0);
 	}
 
