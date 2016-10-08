@@ -957,6 +957,7 @@ MonoBehaviour:
   OnClick: 0
   Sounds:
   - {fileID: 8300000, guid: 3b2b9b9133f034fe191ca0e2b8d7008e, type: 3}
+  - {fileID: 8300000, guid: f8cad752d6bd841e4b4597d87c4c4116, type: 3}
 --- !u!82 &762412577
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2154,6 +2155,7 @@ MonoBehaviour:
   Sounds:
   - {fileID: 8300000, guid: 5ba0cdacf3307498da9b5d920eef9253, type: 3}
   - {fileID: 8300000, guid: e244502565e3843829767fd9524216ef, type: 3}
+  - {fileID: 8300000, guid: 12e8a2469ea8a412b8948afa24e64c30, type: 3}
 --- !u!82 &2132999672
 AudioSource:
   m_ObjectHideFlags: 0
